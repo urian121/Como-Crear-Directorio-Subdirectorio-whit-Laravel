@@ -11,10 +11,6 @@ class homeController extends Controller
 {
     
 
-public function crearDirectorio(){
-    return 'holaxx';
-}
-
     public function home(){
 
     /**Verificando si existe el archivo */
@@ -34,16 +30,13 @@ public function crearDirectorio(){
         
     /**Verificanco si existe el Directorio */
 
-/*  $ruta = public_path('upload/imgs');
+  $ruta = public_path('upload/imgs');
     //isDirectory () tomará un argumento como ruta de carpeta y devolverá true si la carpeta existe o false.
     if(!File::isDirectory($ruta)){
     //makeDirectory () tomará cuatro argumentos para crear una carpeta con permiso
     File::makeDirectory($ruta, 0777, true, true);
     }
-    dd('done');
-*/
-
-
+    dd('Directorio Creado');
 
 
 
@@ -53,10 +46,8 @@ public function crearDirectorio(){
 */
 
 
-
-
     return view('home');
-}
+ }
 
 
 }
